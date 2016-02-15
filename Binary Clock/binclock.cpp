@@ -7,11 +7,11 @@
 
 int main()
 {
-	//init GPIO
-	const std::vector<uint8_t> pins[3] = {
+	//init GPIO (example pins)
+	std::vector<uint8_t> pins[3] = {
 		{ 18, 15, 14, 13, 3, 2 }, //hours
-		{ 8, 25, 24, 23, 22, 27, 17 }, //mins
-		{ 12, 6, 5, 7, 11, 9, 10 } //secs
+		{ 8, 25, 24, 23, 22, 27 }, //mins
+		{ 12, 6, 5, 7, 11, 9 } //secs
 	};
 	wiringPiSetupGpio();
 	
